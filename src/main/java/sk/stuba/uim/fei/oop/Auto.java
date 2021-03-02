@@ -7,9 +7,9 @@ public class Auto {
     public double stavNadrze;
     private boolean neojazdene;//primitivny datovy typ,nie su objekty, int, double char
 
-    public Auto(){
+    public Auto(double kapacitaNadrze){
         neojazdene=true;
-        kapacitaNadrze=100;
+        this.kapacitaNadrze=kapacitaNadrze;
     }
 
     public double dotankova(){
