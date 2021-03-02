@@ -11,7 +11,9 @@ public class Auto {
         neojazdene=true;
         this.kapacitaNadrze=kapacitaNadrze;
     }
-
+    public Auto(){
+        this.kapacitaNadrze=100;
+    }
     public double dotankova(){
         double diff = kapacitaNadrze-stavNadrze;
         stavNadrze=  kapacitaNadrze;
