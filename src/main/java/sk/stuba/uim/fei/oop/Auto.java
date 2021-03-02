@@ -8,12 +8,13 @@ public class Auto {
     private boolean neojazdene;//primitivny datovy typ,nie su objekty, int, double char
 
     public Auto(double kapacitaNadrze){
-        neojazdene=true;
+        this.neojazdene=true;
         this.kapacitaNadrze=kapacitaNadrze;
     }
     public Auto(){
-        this.kapacitaNadrze=100;
+        this(100);
     }
+
     public double dotankova(){
         double diff = kapacitaNadrze-stavNadrze;
         stavNadrze=  kapacitaNadrze;
